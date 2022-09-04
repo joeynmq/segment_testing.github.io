@@ -61,7 +61,13 @@
         }
 
         function btn_click(){
-            analytics.track('Button Clicked');
+            analytics.track('Button Clicked', {
+                custom_prop: "testing",
+                custom_obj_prop: {
+                    name: "Testing Obj 1"
+                },
+                custom_arr_prop: ["item_1", { name: "item_2" }]
+            });
         }
     </script>
 
