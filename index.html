@@ -36,6 +36,7 @@
 
     <h2>Testing Track Event:</h2>
     <button onclick="btn_click()">Click me to trigger "Button Clicked"</button>
+    <button onclick="order_btn_click()">Click me to trigger "Order Completed"</button>
 
     <script type="text/javascript">
         function identify(e){
@@ -62,6 +63,17 @@
 
         function btn_click(){
             analytics.track('Button Clicked', {
+                custom_prop: "testing",
+                custom_obj_prop: {
+                    name: "Testing Obj 1"
+                },
+                custom_arr_prop: ["item_1", { name: "item_2" }]
+            });
+        }
+
+        // add this button to test Facebook Pixel destination "Standard Events custom properties"
+        function order_btn_click(){
+            analytics.track('Order Completed', {
                 custom_prop: "testing",
                 custom_obj_prop: {
                     name: "Testing Obj 1"
