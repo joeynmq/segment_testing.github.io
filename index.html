@@ -76,7 +76,8 @@
             analytics.track('Order Completed', {
                 custom_prop: "testing",
                 custom_obj_prop: {
-                    name: "Testing Obj 1"
+                    name: "Testing Obj 1",
+                    item: { id: "item_1" }
                 },
                 custom_arr_prop: ["item_1", { name: "item_2" }]
             });
