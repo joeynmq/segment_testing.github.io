@@ -3,11 +3,30 @@
 <head>
     <title>Home Questionnaire</title>
 
+    <!-- OneTrust Cookies Consent Notice start for joeynmq.github.io -->
+    <script 
+        src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  
+        type="text/javascript" 
+        charset="UTF-8" 
+        data-domain-script="018e2bc6-f915-74a6-a49b-30cebbae65e1" >
+    </script>
+    <script type="text/javascript">
+    function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end for joeynmq.github.io -->
+
+    <!-- Add Segment's OneTrust Consent Wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/@segment/analytics-consent-wrapper-onetrust@latest/dist/umd/analytics-onetrust.umd.js"></script>
+
+
     <script>
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="gimNRMAG2tUCrY8DDvzvT5Lvm4ZQtWTE";;analytics.SNIPPET_VERSION="4.15.3";
-      analytics.load("gimNRMAG2tUCrY8DDvzvT5Lvm4ZQtWTE", { obfuscate: true });
+      withOneTrust.load("gimNRMAG2tUCrY8DDvzvT5Lvm4ZQtWTE", { obfuscate: true });
       analytics.page();
+      analytics.track('Application Preapproved');
+
       }}();
+
     </script>
 
     <!-- Verify this domain for Facebook deatinations -->
